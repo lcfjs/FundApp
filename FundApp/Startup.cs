@@ -59,6 +59,7 @@ namespace FundApp
             services.AddCors(options => options.AddPolicy("CorsBoard",
                                 p => p.WithOrigins("http://localhost:55161"
                                 , "http://localhost:8081"
+                                , "http://localhost:8080"
                                 , "http://localhost:5000"
                                 )
                                 .AllowAnyMethod()
