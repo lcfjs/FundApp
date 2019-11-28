@@ -1,0 +1,9 @@
+D:\lichaofeng\code\test\FundApp\Service\bin\Release\netcoreapp2.2\Service.deps.json
+D:\lichaofeng\code\test\FundApp\Service\bin\Release\netcoreapp2.2\Service.dll
+D:\lichaofeng\code\test\FundApp\Service\bin\Release\netcoreapp2.2\Service.pdb
+D:\lichaofeng\code\test\FundApp\Service\obj\Release\netcoreapp2.2\Service.csproj.CoreCompileInputs.cache
+D:\lichaofeng\code\test\FundApp\Service\obj\Release\netcoreapp2.2\Service.AssemblyInfoInputs.cache
+D:\lichaofeng\code\test\FundApp\Service\obj\Release\netcoreapp2.2\Service.AssemblyInfo.cs
+D:\lichaofeng\code\test\FundApp\Service\obj\Release\netcoreapp2.2\Service.dll
+D:\lichaofeng\code\test\FundApp\Service\obj\Release\netcoreapp2.2\Service.pdb
+D:\lichaofeng\code\test\FundApp\Service\obj\Release\netcoreapp2.2\Service.csprojAssemblyReference.cache
