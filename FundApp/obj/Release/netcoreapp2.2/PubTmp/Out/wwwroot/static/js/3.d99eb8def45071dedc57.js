@@ -1,2 +1,0 @@
-webpackJsonp([3],{AArN:function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n={render:function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"hello"},[e("h1",[this._v(this._s(this.msg))]),this._v(" "),e("h2",[this._v("fundList")])])},staticRenderFns:[]};var i=s("VU/8")({name:"HelloWorld",data:function(){return{msg:"fundList!!!"}}},n,!1,function(t){s("R6dV")},"data-v-632c5116",null);e.default=i.exports},R6dV:function(t,e){}});
-//# sourceMappingURL=3.d99eb8def45071dedc57.js.map

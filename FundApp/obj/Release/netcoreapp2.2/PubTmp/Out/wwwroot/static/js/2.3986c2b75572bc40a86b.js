@@ -1,2 +1,0 @@
-webpackJsonp([2],{KR8f:function(e,t,s){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",{staticClass:"hello"},[t("h1",[this._v(this._s(this.msg))]),this._v(" "),t("h2",[this._v("Essential Links")])])},staticRenderFns:[]};var i=s("VU/8")({name:"HelloWorld",data:function(){return{msg:"Welcome FundApp!!!"}}},n,!1,function(e){s("dCsy")},"data-v-6d8a09eb",null);t.default=i.exports},dCsy:function(e,t){}});
-//# sourceMappingURL=2.3986c2b75572bc40a86b.js.map
