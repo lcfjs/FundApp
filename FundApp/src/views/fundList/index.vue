@@ -1,7 +1,10 @@
 <template>
     <div class="hello">
         <h1>{{ msg }}</h1>
-        <h2>fundList</h2>
+        <div>
+            <iframe src="http://fundgz.1234567.com.cn/js/257070.js" style="border:0px; width:1024px; height:28px; overflow:hidden;" scrolling="no"></iframe>
+            <iframe src="http://fundgz.1234567.com.cn/js/320007.js" style="border:0px; width:1024px; height:28px; overflow:hidden;" scrolling="no"></iframe>
+        </div>
     </div>
 </template>
 <script>
