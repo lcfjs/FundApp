@@ -40,6 +40,11 @@ namespace FundApp.Controllers
 
 
 
+        public IActionResult GetEnvironmentVariable()
+        {
+            var result = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            return Json(Success(result));
+        }
 
         public IActionResult Insert()
         {

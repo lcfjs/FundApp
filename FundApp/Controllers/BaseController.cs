@@ -9,13 +9,9 @@ namespace FundApp.Controllers
 {
     public class BaseController : Controller
     {
-        protected ResponseModel Success(string msg, object data = null)
+        protected ResponseModel Success(object data, string msg = "操作成功")
         {
             return new ResponseModel { code = 0, msg = msg, data = data };
-        }
-        protected ResponseModel Success(object data)
-        {
-            return new ResponseModel { code = 0, msg = "操作成功", data = data };
         }
         protected ResponseModel Success()
         {
