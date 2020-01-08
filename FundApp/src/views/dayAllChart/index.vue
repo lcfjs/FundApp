@@ -7,11 +7,11 @@
 
             <el-row>
                 <el-col :span="6" class="col1">
-                    <el-select v-model="fundCode" placeholder="请选择" @change="" multiple style="width:310px;">
+                    <el-select v-model="fundCode" placeholder="请选择" @change="slChange" multiple style="width:310px;">
                         <el-option v-for="item in fundCodes"
                                    :key="item.code"
                                    :label="item.name"
-                                   :value="item.code">
+                                   :value="item.code" @click.native="optionClick(item.code)">
                         </el-option>
                     </el-select>
                 </el-col>
@@ -57,9 +57,10 @@
             return {
                 msg: 'fundList!!!',
                 fullscreenLoading: false,
+                checkAllCode:'000000',
                 dayChart: null,
                 dateRanges: '',
-                fundCode: ['257070'],
+                fundCode: [],
                 addCode: "",
                 tableData: [],
                 activeName: "chart",
@@ -129,8 +130,34 @@
                             x.name = x.name + '(' + x.code + ')'
                         });
                         _this.fundCodes = result.data;
+                        result.data.unshift({ code: _this.checkAllCode, name: '---全选---' });
                     }
                 });
+            },
+            optionClick(option) {
+                if (option == this.checkAllCode) {
+                    if (this.fundCode.length > 0) {
+                        this.fundCode = [];
+                    } else {
+                        const allValues = [];
+                        this.fundCodes.forEach(item => {
+                            if (item.code != this.checkAllCode) {
+                                allValues.push(item.code);
+                            }
+                        });
+                        this.fundCode = allValues;
+                    }
+                }
+
+            },
+            slChange(selectVal) {
+                let code = this.checkAllCode;
+                var pindex = this.fundCode.findIndex(function (item) {
+                    return item == code;
+                });
+                if (pindex >= 0) {
+                    this.fundCode.splice(pindex, 1);
+                }
             },
             getChartData: function () {
                 var _this = this;
