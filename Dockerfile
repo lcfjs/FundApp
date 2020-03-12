@@ -3,6 +3,9 @@ FROM node:6.10.3
 WORKDIR /app
 EXPOSE 80
 
+# ENV TZ=Asia/Shanghai
+ENV ASPNETCORE_ENVIRONMENT=$ASPNETCORE_ENVIRONMENT
+
 FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
 COPY ["FundApp/FundApp.csproj", "FundApp/"]
