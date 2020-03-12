@@ -4,6 +4,7 @@
         <hr />
         <h2>CORE_ENV：{{netcoreEnv}}</h2>
         <h2>NODE_ENV：{{nodeEnv}}</h2>
+        <h2>DateTime：{{datetime}}</h2>
     </div>
 </template>
 <script>
@@ -15,6 +16,7 @@
                 netcoreEnv: "",
                 nodeEnv:"",
                 msg: 'Welcome FundApp!!!',
+                datetime: '',
             }
         },
         methods: {
@@ -26,6 +28,17 @@
                     console.log(result)
                     if (result) {
                         _this.netcoreEnv = result.data;
+                    }
+                });
+            },
+            getDateTime() {
+                var _this = this;
+                request({
+                    url: "/Home/GetDateTime",
+                }).then(result => {
+                    console.log(result)
+                    if (result) {
+                        _this.datetime = result.data;
                     }
                 });
             },

@@ -40,6 +40,11 @@ namespace FundApp.Controllers
 
 
 
+        public IActionResult GetDateTime()
+        {
+            return Json(Success(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")));
+        }
+
         public IActionResult GetEnvironmentVariable()
         {
             var result = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
