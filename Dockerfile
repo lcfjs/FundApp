@@ -1,5 +1,4 @@
 FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
-FROM node:6.10.3
 WORKDIR /app
 EXPOSE 80
 
@@ -12,9 +11,6 @@ COPY ["FundApp/FundApp.csproj", "FundApp/"]
 COPY ["Service/Service.csproj", "Service/"]
 RUN dotnet restore "FundApp/FundApp.csproj"
 COPY . .
-
-RUN /app/configure
-RUN npm run build
 
 WORKDIR "/src/FundApp"
 RUN dotnet build "FundApp.csproj" -c Release -o /app
