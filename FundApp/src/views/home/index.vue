@@ -48,7 +48,8 @@
             console.log(process.env.NODE_ENV)
         },
         mounted() {
-            this.getEnv();   
+            this.getEnv();  
+            this.getDateTime(); 
         }
     }
 </script>
